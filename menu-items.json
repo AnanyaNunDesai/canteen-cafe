@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Chocolate Cake",
+    "price": "$14",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme."
+  },
+  {
+    "title": "Klassy Pancake",
+    "price": "$22",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme."
+  },
+  {
+    "title": "Tall Klassy Bread",
+    "price": "$18",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme."
+  },
+  {
+    "title": "Blueberry CheeseCake",
+    "price": "$10",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme."
+  },
+  {
+    "title": "Klassy Cup Cake",
+    "price": "$8.50",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme."
+  },
+  {
+    "title": "Klassic Cake",
+    "price": "$7.25",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme."
+  }
+]
