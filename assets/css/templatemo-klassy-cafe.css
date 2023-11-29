@@ -609,7 +609,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fb5849;
+  color: #db7444;
 }
 
 @media (max-width: 1200px) {
@@ -757,20 +757,19 @@ banner
 }
 
 #top .left-content {
-  background-image: url(../images/top-left-bg.jpg);
+  background-image: url(../images/banner-red.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 #top .left-content .inner-content {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  text-align: center; /* Center text within the inner content */
 }
 
 #top .left-content h2 {
@@ -780,6 +779,14 @@ banner
   color: #e8e6d3;
   font-size: 72px;
   font-weight: 700;
+}
+
+#top .left-content img {
+  max-width: 70%;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Maintain the aspect ratio and center the image within the container */
 }
 
 #top .left-content h6 {
