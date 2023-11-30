@@ -1286,6 +1286,11 @@ menu
   font-weight: 400;
 }
 
+.canteen-deals h6 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
 .info {
   position: relative;
   width: 100%;
