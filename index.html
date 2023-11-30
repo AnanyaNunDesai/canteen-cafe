@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
+    <title>Canteen Cafe</title>
     <!--
     
 TemplateMo 558 Klassy Cafe
@@ -198,7 +198,7 @@ https://templatemo.com/tm-558-klassy-cafe
                     <div class="section-heading">
                         <h6>Our Menu</h6>
                         <!-- <h2>Our selection of cakes with quality taste</h2> -->
-                        <h2>Click a card to view our quality menus</h2>
+                        <h2>Click to view our quality menus</h2>
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@ https://templatemo.com/tm-558-klassy-cafe
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card">
+                    <div class="card" onclick="toggleMenu('card2')">
                         <h5>LUNCHTIME</h5>
                     </div>
                 </div>
@@ -239,6 +239,19 @@ https://templatemo.com/tm-558-klassy-cafe
                     document.getElementById('card1Menu').innerHTML = html;
                 })
                 .catch(error => console.error('Error fetching menu1.html:', error));
+        </script>
+        <div class="food-menu" id="card2Menu">
+            <!-- Contents of menu1.html will be inserted here dynamically -->
+        </div>
+        <script>
+            // Fetch the contents of menu1.html
+            fetch('menu2.html')
+                .then(response => response.text())
+                .then(html => {
+                    // Insert the HTML into the food-menu div
+                    document.getElementById('card2Menu').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching menu2.html:', error));
         </script>
     </section>
     <!-- ***** Menu Area Ends ***** -->

@@ -1286,9 +1286,20 @@ menu
   font-weight: 400;
 }
 
+.canteen-deals {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .canteen-deals h6 {
   text-decoration: underline;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
+  font-size: 20px; 
+}
+
+.canteen-deals p {
+  color: #a14921;
 }
 
 .info {
