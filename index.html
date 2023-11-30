@@ -87,7 +87,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                 </ul>
                             </li> -->
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
-                            <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
+                            <!-- <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> -->
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -228,137 +228,23 @@ https://templatemo.com/tm-558-klassy-cafe
             </div>
         </div>
         <div class="food-menu" id="card1Menu">
-            <h2>ALL DAY BREAKFAST</h2>
-            <div class="diet-keylist">
-                <p>*GF = Gluten Free</p>
-                <p>*DF = Dairy Free</p>
-                <p>*VG = Vegetarian</p>
-                <p>*V = Vegan</p>
-            </div>
-            <div class="food-subs-list">
-                <div class="diet-option">
-                    <b>Substitute with Multi Grain Gluten Free Bread</b>
-                    <p>&lpar;GF&rpar;</p>
-                </div>
-                <b>+15k</b>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>SEASONAL FRUIT SALAD</h6>
-                    <div class="food-properties">
-                        <p>&lpar;GF, VG, V&rpar;</p>
-                        <b>50k</b>
-                    </div>
-                </div>
-                <div class="food-detail">
-                    <p>Add yoghurt & honey</p>
-                    <b>+15K</b>
-                </div>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>HOUSE VANILLA BEAN GRANOLA w FRUIT SALAD & HONEY YOGHURT</h6>
-                    <div class="food-properties">
-                        <p>&lpar;VG&rpar;</p>
-                        <b>60k</b>
-                    </div>
-                </div>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>COCONUT SMOOTHIE BOWL</h6>
-                    <div class="food-properties">
-                        <p>&lpar;GF, DF, VG, V&rpar;</p>
-                        <b>65k</b>
-                    </div>
-                </div>
-                <p>Choose Berry or Dragon Fruit &lpar;seasonal&rpar;</p>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>GRANOLA FRUIT TRIFLE</h6>
-                    <div class="food-properties">
-                        <p>&lpar;GF, DF, VG, V&rpar;</p>
-                        <b>65k</b>
-                    </div>
-                </div>
-                <p>House Granola. Fruit. Yoghurt. Honey. Almond. Coconut. Goji Berry</p>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>CHIA SEED PUDDING</h6>
-                    <div class="food-properties">
-                        <p>&lpar;GF, DF, VG, V&rpar;</p>
-                        <b>60k</b>
-                    </div>
-                </div>
-                <p>Choose Strawberry, Mango, or Dragon Fruit &lpar;seasonal&rpar;</p>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>BANANA, SULTANA & CASHEW PORRIDGE w COCONUT HONEY SAUCE</h6>
-                    <div class="food-properties">
-                        <p>&lpar;VG&rpar;</p>
-                        <b>50k</b>
-                    </div>
-                </div>
-                <div class="diet-option">
-                    <p>Cow's milk or Coconut milk</p>
-                    <p>&lpar;DF&rpar;</p>
-                </div>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>FRENCH TOAST w COCONUT HONEY SAUCE</h6>
-                    <div class="food-properties">
-                        <p>&lpar;VG&rpar;</p>
-                        <b>55k</b>
-                    </div>
-                </div>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>BANANA HOT CAKES w COCONUT HONEY SAUCE</h6>
-                    <div class="food-properties">
-                        <p>&lpar;VG&rpar;</p>
-                        <b>55k</b>
-                    </div>
-                </div>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>TOASTED SOURDOUGH, MULTIGRAIN or WARM CROISSANT</h6>
-                    <div class="food-properties">
-                        <p>&lpar;VG&rpar;</p>
-                        <b>55k</b>
-                    </div>
-                </div>
-                <p>Served with Jam, Honey or Nutella</p>
-                <div class="food-detail">
-                    <p>OR Vegemite</p>
-                    <b>+20k</b>
-                </div>
-            </div>
-            <div class="food-item">
-                <div class="food-detail">
-                    <h6>FETA, BASIL & HOUSE SUNDRIED TOM's</h6>
-                    <div class="food-properties">
-                        <p>&lpar;VG&rpar;</p>
-                        <b>65k</b>
-                    </div>
-                </div>
-                <p>Choice of toasted Sourdough, Multigrain or Warm Croissant</p>
-                <div class="food-detail">
-                    <p>add a serve of scrambled eggs</p>
-                    <b>+20k</b>
-                </div>
-            </div>
+            <!-- Contents of menu1.html will be inserted here dynamically -->
         </div>
+        <script>
+            // Fetch the contents of menu1.html
+            fetch('menu1.html')
+                .then(response => response.text())
+                .then(html => {
+                    // Insert the HTML into the food-menu div
+                    document.getElementById('card1Menu').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching menu1.html:', error));
+        </script>
     </section>
     <!-- ***** Menu Area Ends ***** -->
 
     <!-- ***** Reservation Us Area Starts ***** -->
-    <section class="section" id="reservation">
+    <!-- <section class="section" id="reservation">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 align-self-center">
@@ -469,7 +355,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Reservation Area Ends ***** -->
 
     <!-- ***** Footer Start ***** -->
@@ -482,14 +368,16 @@ https://templatemo.com/tm-558-klassy-cafe
                             <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
                             <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
                             <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-                            <li><a href="https://www.instagram.com/canteencafe/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noreferrer"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://maps.app.goo.gl/JmPTmMN71MuConyXA" target="_blank" rel="noreferrer"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="https://www.instagram.com/canteencafe/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                                    target="_blank" rel="noreferrer"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://maps.app.goo.gl/JmPTmMN71MuConyXA" target="_blank" rel="noreferrer"><i
+                                        class="fa fa-map-marker"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/white-logo.png" alt=""></a>
+                        <a href="index.html"><img src="assets/images/canteen logo 3.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">

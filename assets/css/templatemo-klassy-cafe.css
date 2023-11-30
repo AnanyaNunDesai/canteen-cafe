@@ -767,8 +767,10 @@ banner
   align-items: center;
   justify-content: center;
 }
+
 #top .left-content .inner-content {
-  text-align: center; /* Center text within the inner content */
+  text-align: center;
+  /* Center text within the inner content */
 }
 
 #top .left-content h2 {
@@ -785,7 +787,8 @@ banner
   max-height: 70%;
   width: auto;
   height: auto;
-  object-fit: contain; /* Maintain the aspect ratio and center the image within the container */
+  object-fit: contain;
+  /* Maintain the aspect ratio and center the image within the container */
 }
 
 #top .left-content h6 {
@@ -1116,7 +1119,8 @@ menu
 }
 
 .card:hover {
-  background-color: #ff7444;;
+  background-color: #ff7444;
+  ;
 }
 
 .card:focus,
@@ -1170,12 +1174,61 @@ menu
 
 .food-menu {
   margin-top: 100px;
-  background-color: white;
+  background-color: #bbccc8;
   display: none;
   flex-direction: column;
   margin: 20px;
   padding: 10px;
+  color: #243d53;
 }
+
+/* Add your existing styles here */
+
+.food-properties p {
+  display: inline;
+  margin-right: 20px;
+}
+
+.food-properties p.gf {
+  color: rgb(84, 101, 195);
+  /* Color for Gluten Free */
+}
+
+.food-properties p.df {
+  color: rgb(176, 49, 113);
+  /* Color for Dairy Free */
+}
+
+.food-properties p.vg {
+  color: rgb(215, 87, 27)
+    /* Color for Vegetarian */
+}
+
+.food-properties p.v {
+  color: rgb(39, 97, 39);
+  /* Color for Vegan */
+}
+
+.diet-keylist p.gf {
+  color: rgb(84, 101, 195);
+  /* Color for Gluten Free */
+}
+
+.diet-keylist p.df {
+  color: rgb(176, 49, 113);
+  /* Color for Dairy Free */
+}
+
+.diet-keylist p.vg {
+  color: rgb(215, 87, 27)
+    /* Color for Vegetarian */
+}
+
+.diet-keylist p.v {
+  color: rgb(39, 97, 39);
+  /* Color for Vegan */
+}
+
 
 .food-subs-list {
   display: flex;
@@ -1218,6 +1271,19 @@ menu
   flex-direction: row;
   justify-content: space-between;
   align-self: flex-end;
+}
+
+.food-properties p:not(:last-child) {
+  margin-right: 5px; /* Add a small margin between the diet properties */
+}
+
+.diet-option .df {
+  color: rgb(176, 49, 113);
+}
+
+.food-item .food-detail .menu-disclaimer p{
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .info {
@@ -1761,12 +1827,12 @@ footer
 
 footer {
   margin-top: 60px;
-  padding: 50px 0px;
+  padding: 20px 0px;
   background-color: #365454;
 }
 
 footer .left-text-content p {
-  margin-top: 5px;
+  margin-top: 70px;
   color: #e8e8d3;
   font-size: 14px;
   text-align: right;
@@ -1782,11 +1848,16 @@ footer .right-text-content p {
 
 footer .right-text-content {
   text-align: left;
-  margin-top: 10px;
+  margin-top: 60px;
 }
 
 footer .logo {
   text-align: center;
+}
+
+footer .logo img {
+  max-width: 50%;
+  max-height: 50%;
 }
 
 footer .right-text-content ul li {
