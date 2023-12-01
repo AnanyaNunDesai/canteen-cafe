@@ -374,7 +374,7 @@ header
 }
 
 .header-area .main-nav .nav li {
-  margin-right: 100px;
+  margin-right: 60px;
   /* Adjust the margin to your desired spacing */
   margin-top: 17px;
 }
@@ -1451,6 +1451,92 @@ th+th {
 }
 
 
+
+/* 
+---------------------------------------------
+IG embed
+--------------------------------------------- 
+*/
+
+.ig-embed {
+  background-color: #a14921;
+  padding-top: 60px;
+}
+
+.instagram-container {
+  display: flex;
+  justify-content: space-around;
+  /* Adjust as needed, you can use space-between, space-around, or flex-start/flex-end */
+  align-items: center;
+  height: 100vh;
+}
+
+.instagram-embed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Adjust the max-width and min-width as needed */
+  max-width: 40%;
+  min-width: 25%;
+}
+
+.instagram-media {
+  background: #d90e0e !important;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  max-width: 40%;
+  min-width: 25%;
+  /* height: 100%; */
+  padding: 0;
+  width: 99.375%;
+  width: -webkit-calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+.embed-container {
+  padding: 16px;
+  margin: 20px;
+}
+
+.embed-container a {
+  background: #FFFFFF;
+  line-height: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.embed-container p {
+  color: #c9c8cd;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+  margin-top: 8px;
+  overflow: hidden;
+  padding: 8px 0 7px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.embed-container a,
+.embed-container p a {
+  color: #c9c8cd;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+.embed-container a:hover,
+.embed-container p a:hover {
+  text-decoration: underline;
+}
 
 /* 
 ---------------------------------------------
