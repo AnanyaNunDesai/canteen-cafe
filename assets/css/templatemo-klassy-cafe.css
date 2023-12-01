@@ -221,6 +221,10 @@ body {
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
+
+  .food-item > p {
+    display: none;
+  }
 }
 
 .main-white-button a {
@@ -1261,6 +1265,61 @@ menu
   color: #a14921;
 }
 
+@media (max-width: 767px) {
+  .canteen-deals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .food-item {
+    margin-top: 0px;
+  }
+
+  .food-item .food-detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .food-detail .food-properties {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+  }
+
+  .food-properties .food-categ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .food-categ p {
+    width: 100%;
+  }
+
+  .diet-option {
+    margin-bottom: 10px;
+  }
+
+  .canteen-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
 .info {
   position: relative;
   width: 100%;
@@ -1450,6 +1509,36 @@ th+th {
   border-left: 2px solid #793819;
 }
 
+@media (max-width: 767px) {
+  .timings {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 100px;
+  }
+
+  .schedule-logo img {
+    display: none;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .schedule-content {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .schedule h2 {
+    margin-left: 0;
+  }
+
+  .schedule-table {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 
 /* 
@@ -1537,6 +1626,31 @@ IG embed
 .embed-container p a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 767px) {
+  .instagram-container {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .instagram-embed,
+  .instagram-media {
+    max-width: 50%;
+    min-width: 100%;
+  }
+
+  .embed-container {
+    margin: 10px;
+  }
+
+  .embed-container p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
 
 /* 
 ---------------------------------------------
