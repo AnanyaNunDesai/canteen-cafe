@@ -193,12 +193,12 @@ body {
 }
 
 ::selection {
-  background: #fb5849;
+  background: #be7350;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #fb5849;
+  background: #be7350;
   color: #fff;
 }
 
@@ -225,7 +225,7 @@ body {
 
 .main-white-button a {
   font-size: 13px;
-  color: #fb5849;
+  color: #be7350;
   background-color: #fff;
   padding: 12px 25px;
   display: inline-block;
@@ -252,7 +252,7 @@ body {
 .section-heading h6 {
   position: relative;
   font-size: 15px;
-  color: #fb5849;
+  color: #be7350;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -266,7 +266,7 @@ body {
   position: absolute;
   left: 0;
   top: 8px;
-  background-color: #fb5849;
+  background-color: #be7350;
 }
 
 .section-heading h2 {
@@ -374,7 +374,7 @@ header
 }
 
 .header-area .main-nav .nav li {
-  margin-right: 40px;
+  margin-right: 100px;
   /* Adjust the margin to your desired spacing */
   margin-top: 17px;
 }
@@ -468,7 +468,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fb5849 !important;
+  color: #be7350 !important;
   padding-left: 25px;
 }
 
@@ -629,7 +629,7 @@ header
 
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fb5849 !important;
+    color: #be7350 !important;
     opacity: 1;
   }
 
@@ -691,7 +691,7 @@ header
 
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fb5849 !important;
+    color: #be7350 !important;
   }
 
   .header-area .main-nav .nav li.submenu ul {
@@ -748,6 +748,7 @@ banner
 
 #top {
   padding-top: 100px;
+  margin-bottom: 120px;
 }
 
 #top .col-lg-4,
@@ -1027,60 +1028,6 @@ ul.slick-dots {
   border: 1px solid transparent
 }
 
-
-/*
----------------------------------------------
-about
----------------------------------------------
-*/
-
-#about {
-  margin-top: 20px;
-  padding: 100px 0px 0px 0px;
-  position: relative;
-  z-index: 9;
-}
-
-#about .section-heading h2 {
-  padding-right: 120px;
-}
-
-#about img {
-  width: 100%;
-  overflow: hidden;
-}
-
-#about .left-text-content p {
-  margin-bottom: 25px;
-}
-
-#about .right-content {
-  margin-left: 30px;
-}
-
-#about .right-content .thumb {
-  position: relative;
-}
-
-#about .right-content .thumb a {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 70px;
-  height: 70px;
-  display: inline-block;
-  line-height: 70px;
-  text-align: center;
-  background-color: #fb5849;
-  color: #fff;
-  border-radius: 50%;
-  transform: translate(-35px, -35px);
-  transition: all .3s;
-}
-
-#about .right-content .thumb a:hover {
-  opacity: .9;
-}
 
 
 /*
@@ -1498,7 +1445,8 @@ th {
 }
 
 /* Apply border only to the right of each cell */
-td + td, th + th {
+td+td,
+th+th {
   border-left: 2px solid #793819;
 }
 
@@ -1514,6 +1462,14 @@ footer {
   margin-top: 60px;
   padding: 20px 0px;
   background-color: #365454;
+}
+
+#footer-text {
+  color: #d47144;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Bodoni Moda';
+  font-weight: 600;
 }
 
 footer .left-text-content p {
@@ -1575,6 +1531,11 @@ footer .right-text-content ul li a:hover {
   color: #2a2a2a;
 }
 
+footer .social-icons {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /* 
 ---------------------------------------------
 responsive
@@ -1610,19 +1571,6 @@ responsive
     padding: 25% 0px;
   }
 
-  #about .right-content {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-
-  #chefs .chef-item {
-    margin-bottom: 30px;
-  }
-
-  #reservation .phone {
-    margin-bottom: 60px;
-  }
-
   #contact {
     margin-left: 0px;
     margin-top: 30px;
@@ -1653,7 +1601,7 @@ responsive
 
 #preloader {
   overflow: hidden;
-  background-color: #fb5849;
+  background-color: #be7350;
   left: 0;
   right: 0;
   top: 0;
