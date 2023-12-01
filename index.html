@@ -179,7 +179,7 @@ https://templatemo.com/tm-558-klassy-cafe
                     </div>
                 </div>
                 <div class="item">
-                    <div class="card">
+                    <div class="card" onclick="toggleMenu('card4')">
                         <h5>SWEET TREATS</h5>
                     </div>
                 </div>
@@ -221,6 +221,18 @@ https://templatemo.com/tm-558-klassy-cafe
                     document.getElementById('card3Menu').innerHTML = html;
                 })
                 .catch(error => console.error('Error fetching menu3.html:', error));
+        </script>
+        <div class="food-menu" id="card4Menu">
+            <!-- Contents of menu4.html will be inserted here dynamically -->
+        </div>
+        <script>
+            // Fetch the contents of menu3.html
+            fetch('menu4.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('card4Menu').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching menu4.html:', error));
         </script>
     </section>
     <!-- ***** Menu Area Ends ***** -->
