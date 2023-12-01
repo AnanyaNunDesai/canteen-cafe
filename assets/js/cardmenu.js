@@ -1,13 +1,19 @@
 function toggleMenu(elementId) {
-    console.log(elementId);
     var content = document.getElementById(elementId + 'Menu');
-    var menuContainer = document.getElementById('menu-container');
     
+    // Hide opened menus
+    var menus = document.getElementsByClassName('food-menu');
+
+    for (var menu of menus) {
+        if (menu !== content) {
+            menu.style.display = 'none';
+        }
+    }
+
+    // Toggle selected card menu
     if (content.style.display === 'none' || content.style.display === '') {
         content.style.display = 'flex';
-        menuContainer.style.display = 'block';
     } else {
         content.style.display = 'none';
-        menuContainer.style.display = 'none';
     }
 }

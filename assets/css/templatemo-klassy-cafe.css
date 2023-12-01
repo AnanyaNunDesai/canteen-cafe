@@ -1256,6 +1256,12 @@ menu
   margin-bottom: 10px;
 }
 
+.selections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .food-menu .food-detail {
   display: flex;
   flex-direction: row;
@@ -1290,6 +1296,11 @@ menu
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+.canteen-subtitle {
+  margin: 20px 0 20px 0;
+  text-decoration: underline;
 }
 
 .canteen-deals h6 {
