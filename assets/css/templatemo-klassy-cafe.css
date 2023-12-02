@@ -684,16 +684,17 @@ header
 
   .header-area .main-nav .nav li a {
     height: 50px !important;
+    border-radius: 5px;
     width: 100px;
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #f7f7f7 !important;
+    background: #e8e8d3 !important;
     color: #191a20 !important;
   }
 
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
+    background: #ceceb5 !important;
     color: #be7350 !important;
   }
 
