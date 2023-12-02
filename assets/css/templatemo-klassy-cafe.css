@@ -320,6 +320,9 @@ header
   right: 0px;
   z-index: 100;
   height: 100px;
+}
+
+.header-area > *:not(.logo-container) {
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -341,10 +344,6 @@ header
   text-transform: uppercase;
   letter-spacing: 2px;
   float: left;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .header-area .main-nav .logo h6 {
@@ -374,17 +373,15 @@ header
 .header-area .main-nav .nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   margin-top: 0;
+  width: 100%;
 }
 
 .header-area .main-nav .nav li {
   margin-right: 60px;
   /* Adjust the margin to your desired spacing */
   margin-top: 17px;
-}
-
-.header-area .main-nav .nav li:last-child {
-  margin-right: 0;
 }
 
 .header-area .main-nav .nav li a {
@@ -616,9 +613,8 @@ header
 }
 
 @media (max-width: 1200px) {
-  .header-area .main-nav .nav li {
-    padding-left: 12px;
-    padding-right: 12px;
+  .header-area .nav {
+    width: 100%;
   }
 
   .header-area .main-nav:before {
@@ -631,6 +627,14 @@ header
     color: #1e1e1e;
   }
 
+  .header-area .main-nav .logo h6 {
+    display: none;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #be7350 !important;
@@ -641,20 +645,13 @@ header
     width: 100%;
   }
 
-  .header-area {
-    background-color: #f7f7f7;
-    padding: 0px 15px;
-    height: 100px;
-    box-shadow: none;
-    text-align: center;
-  }
-
   .header-area .container {
     padding: 0px;
   }
 
   .header-area .logo {
     margin-left: 30px;
+    display: none;
   }
 
   .header-area .menu-trigger {
@@ -667,9 +664,9 @@ header
 
   .header-area .main-nav .nav {
     display: flex;
-    align-items: center;
-    /* Align items vertically in the center */
-    margin-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
   }
 
   .header-area .main-nav .nav li:first-child {
@@ -677,15 +674,17 @@ header
   }
 
   .header-area.header-sticky .nav {
-    margin-top: 100px !important;
+    margin-top: 80px !important;
+    height: 100%;
   }
 
   .header-area .main-nav .nav li {
-    margin: 0 15px;
+    margin: auto;
   }
 
   .header-area .main-nav .nav li a {
     height: 50px !important;
+    width: 100px;
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
@@ -735,6 +734,19 @@ header
   .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+
+  .header-area {
+    background-color: #f7f7f7;
+    padding: 0px 15px;
+    height: 80px;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .header-area.header-sticky {
+    min-height: 80px;
+  }
+
 }
 
 @media (min-width: 767px) {
@@ -1273,6 +1285,12 @@ menu
     align-items: center;
   }
 
+  .diet-keylist {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
   .food-item {
     margin-top: 0px;
   }
@@ -1433,6 +1451,14 @@ menu
   content: '\f105';
 }
 
+@media(max-width: 767px) {
+  #menu {
+    width: 80%;
+    margin: 0;
+    margin-left: 10%;
+  }
+}
+
 /* 
 ---------------------------------------------
 timings
@@ -1475,6 +1501,14 @@ timings
   font-family: 'Vina Sans';
   font-size: 72px;
   margin-left: -940px;
+}
+
+.schedule p {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Vina Sans';
+  font-size: 72px;
+  margin-left: 0px;
 }
 
 .schedule-table {
@@ -1630,15 +1664,15 @@ IG embed
 @media (max-width: 767px) {
   .instagram-container {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     height: auto;
     padding-bottom: 80px;
   }
 
   .instagram-embed,
   .instagram-media {
-    max-width: 50%;
-    min-width: 100%;
+    max-width: 80%;
+    min-width: 50%;
   }
 
   .embed-container {
@@ -1744,7 +1778,7 @@ responsive
 
 @media (max-width: 992px) {
   #top {
-    padding-top: 100px;
+    padding-top: 0;
     height: auto;
   }
 
@@ -1757,8 +1791,7 @@ responsive
   }
 
   .header-area .main-nav .nav li {
-    padding-right: 5px;
-    padding-left: 5px;
+    margin-right: 30px;
   }
 
   .header-area .main-nav .nav li a {
@@ -1769,6 +1802,10 @@ responsive
   #top .left-content {
     text-align: center;
     padding: 25% 0px;
+  }
+  
+  #top .left-content img {
+    padding-top: 100px;
   }
 
   #contact {
